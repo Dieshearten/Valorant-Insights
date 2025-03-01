@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.explanation-bubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 600px;
+    padding: 15px;
+    background-color: rgba(255, 70, 85, 0.9); /* Valorant red */
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo-top-right {
+    position: fixed; /* Stays in place when scrolling */
+    top: 10px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    width: 100px; /* Adjust size */
+    height: auto;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Insights+ | Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: white;
+        }
+        .header {
+            background-color: #ff4655;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .stats {
+            margin-top: 30px;
+        }
+        .analyze-btn {
+            background-color: #ff4655;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .analyze-btn:hover {
+            background-color: #cc3a48;
+        }
+    </style>
+    <script>
+        function startAnalysis() {
+            alert("Analyzing your data... (This is a placeholder action)");
+        }
+    </script>
+</head>
+<body>
+	<img src="logo.png" alt="Site Logo" class="logo-top-right">
+    <div class="header"> Dashboard</div>
+    <div class="stats">
+        <h2>Your Stats</h2>
+        <p>K/D Ratio: 1.25</p>
+        <p>Win Rate: 52%</p>
+        <p>Headshot Accuracy: 30%</p>
+		<p>Recent Matches:</p>
+        <button class="analyze-btn" onclick="startAnalysis()">Analyze</button>
+    </div>
+	<div class="explanation-bubble">
+    <strong>About This Page</strong>
+    <p>
+        This is the Dashboard of Valorant Insights+. After signing in, users land here to see an overview of their stats, including K/D ratio, win rate, headshot accuracy and their recent matches.  
+        <br><br>
+        The "Analyze" button is the key component of the website. Using my knowledge of Valorant, data analysis and with the help of the Valorant Api to access data such as matches, locations of players during key events (kills and plants). I want to provide thoughtful and personalized insights to the user, which can help improve their future gameplay.
+		<br><br>
+		For instance, below you can see a picture of haven map death locations of a user. Looking at the map we can see that, he has died multiple times in A lobby. With further analysis we can check the angles the user is struggling at in this location and provide tips to improve their performance. 
+	</p>
+	<img src="havenmapdeaths.png" alt="Haven Map Death Locations" style="width: 100%; border-radius: 8px; margin-top: 10px;">
+</div>
+</body>
+</html>
